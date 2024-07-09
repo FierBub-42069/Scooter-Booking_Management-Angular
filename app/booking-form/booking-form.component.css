@@ -1,0 +1,49 @@
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card-body {
+  max-width: 450px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  display: block;
+  margin-bottom: 15px;
+  margin-left: -20px;
+}
+
+button {
+  color: #000;
+}
+ 
+input {
+  margin-left: 15px;
+  border-radius: 75px;
+}
+
+label {
+  margin-right: 15px;
+}
+
+select {
+  border-radius: 75px;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+}
+
+footer p {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center !important;
+}

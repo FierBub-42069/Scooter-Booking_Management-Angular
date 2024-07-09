@@ -1,0 +1,48 @@
+.login-container {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: block;
+  flex-direction: column;
+  width: 300px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.btn-block {
+  width: 30%;
+  color: #000;
+}
+
+.btn .btn-outline-danger {
+  background-color: #d0d0d0 !important;
+}
+
+.btn .btn-outline-danger:hover {
+  background-color: #b0b0b0 !important;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+}
+
+footer p {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center !important;
+}

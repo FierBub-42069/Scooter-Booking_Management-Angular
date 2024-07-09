@@ -1,0 +1,40 @@
+{
+  "bookings": [
+    {
+      "firstName": "Qwerty",
+      "lastName": "Zxcvb",
+      "mobileNumber": 9012,
+      "scooterType": "Electric",
+      "manufacturerName": "Ather Energy",
+      "registrationNumber": "MH01 XY6789",
+      "hireStartDate": "2024-07-08T12:00",
+      "hireEndDate": "2024-07-08T18:00",
+      "chargesPerHour": 150,
+      "id": 5
+    },
+    {
+      "firstName": "AB",
+      "lastName": "Devilliers",
+      "mobileNumber": 9130,
+      "scooterType": "Electric",
+      "manufacturerName": "Hero Motocorp",
+      "registrationNumber": "MH15BS5050",
+      "hireStartDate": "2024-07-08T09:09",
+      "hireEndDate": "2024-07-08T11:09",
+      "chargesPerHour": 100,
+      "id": 6
+    },
+    {
+      "firstName": "Qwerty",
+      "lastName": "Zxcvb",
+      "mobileNumber": 9012,
+      "scooterType": "Petrol",
+      "manufacturerName": "Honda",
+      "registrationNumber": "MH01 XY6789",
+      "hireStartDate": "2024-07-08T14:12",
+      "hireEndDate": "2024-07-08T16:12",
+      "chargesPerHour": 100,
+      "id": 7
+    }
+  ]
+}

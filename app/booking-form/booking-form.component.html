@@ -1,0 +1,190 @@
+<div class="container">
+  <h2>{{ editMode ? "Edit Booking" : "Add Booking" }}</h2>
+  <form [formGroup]="bookingForm" (ngsubmit)="onSubmit()">
+    <div class="card-body">
+      <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            class="form-control"
+            formControlName="firstName"
+          />
+          <div
+            *ngIf="
+              bookingForm.controls['firstName'].invalid &&
+              (bookingForm.controls['firstName'].dirty ||
+                bookingForm.controls['firstName'].touched)
+            "
+            class="text-danger"
+          >
+            First name is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            class="form-control"
+            formControlName="lastName"
+          />
+          <div
+            *ngIf="
+              bookingForm.controls['lastName'].invalid &&
+              (bookingForm.controls['lastName'].dirty ||
+                bookingForm.controls['lastName'].touched)
+            "
+            class="text-danger"
+          >
+            Last name is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="mobileNumber">Mobile Number</label>
+          <input
+            type="number"
+            id="mobileNumber"
+            class="form-control"
+            formControlName="mobileNumber"
+          />
+          <div
+            *ngIf="
+              bookingForm.controls['mobileNumber'].invalid &&
+              (bookingForm.controls['mobileNumber'].dirty ||
+                bookingForm.controls['mobileNumber'].touched)
+            "
+            class="text-danger"
+          >
+            Mobile number is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="scooterType">Scooter Type</label>
+          <select
+            id="scooterType"
+            class="form-control"
+            formControlName="scooterType"
+          >
+            <option *ngFor="let type of scooterTypes" [value]="type">
+              {{ type }}
+            </option>
+          </select>
+          <div
+            *ngIf="
+              bookingForm.controls['scooterType'].invalid &&
+              (bookingForm.controls['scooterType'].dirty ||
+                bookingForm.controls['scooterType'].touched)
+            "
+            class="text-danger"
+          >
+            Scooter type is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="manufacturerName">Manufacturer Name</label>
+          <select
+            id="manufacturerName"
+            class="form-control"
+            formControlName="manufacturerName"
+          >
+            <option *ngFor="let name of manufacturerNames" [value]="name">
+              {{ name }}
+            </option>
+          </select>
+          <div
+            *ngIf="
+              bookingForm.controls['manufacturerName'].invalid &&
+              (bookingForm.controls['manufacturerName'].dirty ||
+                bookingForm.controls['manufacturerName'].touched)
+            "
+            class="text-danger"
+          >
+            Manufacturer name is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="registrationNumber">Registration Number</label>
+          <input
+            type="text"
+            id="registrationNumber"
+            class="form-control"
+            formControlName="registrationNumber"
+          />
+          <div
+            *ngIf="
+              bookingForm.controls['registrationNumber'].invalid &&
+              (bookingForm.controls['registrationNumber'].dirty ||
+                bookingForm.controls['registrationNumber'].touched)
+            "
+            class="text-danger"
+          >
+            Registration number is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="hireStartDate">Hire Start Date and Time</label>
+          <input
+            type="datetime-local"
+            id="hireStartDate"
+            class="form-control"
+            formControlName="hireStartDate"
+          />
+          <div
+            *ngIf="
+              bookingForm.controls['hireStartDate'].invalid &&
+              (bookingForm.controls['hireStartDate'].dirty ||
+                bookingForm.controls['hireStartDate'].touched)
+            "
+            class="text-danger"
+          >
+            Hire start date and time is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="hireEndDate">Hire End Date and Time</label>
+          <input
+            type="datetime-local"
+            id="hireEndDate"
+            class="form-control"
+            formControlName="hireEndDate"
+          />
+          <div
+            *ngIf="
+              bookingForm.controls['hireEndDate'].invalid &&
+              (bookingForm.controls['hireEndDate'].dirty ||
+                bookingForm.controls['hireEndDate'].touched)
+            "
+            class="text-danger"
+          >
+            Hire end date and time is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="chargesPerHour">Charges per Hour</label>
+          <input
+            type="number"
+            id="chargesPerHour"
+            class="form-control"
+            formControlName="chargesPerHour"
+          />
+          <div
+            *ngIf="
+              bookingForm.controls['chargesPerHour'].invalid &&
+              (bookingForm.controls['chargesPerHour'].dirty ||
+                bookingForm.controls['chargesPerHour'].touched)
+            "
+            class="text-danger"
+          >
+            Charges per hour is required.
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+      </form>
+    </div>
+  </form>
+</div>
+<footer>
+  <p>&copy; {{ currentYear }}. All rights reserved.</p>
+</footer>

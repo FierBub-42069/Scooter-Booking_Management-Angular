@@ -1,0 +1,66 @@
+<header class="d-flex justify-content-between align-items-center py-3">
+  <h2
+    style="
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 50px;
+      margin-top: 20px;
+    "
+  >
+    Bookings List
+  </h2>
+  <nav>
+    <button class="btn btn-outline-danger" (click)="logout()">Logout</button>
+  </nav>
+</header>
+<div class="mb-3">
+  <button class="btn btn-success" (click)="addBooking()">Add Booking</button>
+</div>
+<div class="container">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Mobile Number</th>
+        <th>Scooter Type</th>
+        <th>Manufacturer Name</th>
+        <th>Registration Number</th>
+        <th>Hire Start Date</th>
+        <th>Hire End Date</th>
+        <th>Charges per Hour</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let booking of bookings">
+        <td>{{ booking.firstName }}</td>
+        <td>{{ booking.lastName }}</td>
+        <td>{{ booking.mobileNumber }}</td>
+        <td>{{ booking.scooterType }}</td>
+        <td>{{ booking.manufacturerName }}</td>
+        <td>{{ booking.registrationNumber }}</td>
+        <td>{{ booking.hireStartDate }}</td>
+        <td>{{ booking.hireEndDate }}</td>
+        <td>{{ booking.chargesPerHour }}</td>
+        <td>
+          <button
+            class="btn btn-warning btn-sm"
+            (click)="editBooking(booking.id)"
+          >
+            Edit
+          </button>
+          <button
+            class="btn btn-danger btn-sm"
+            (click)="deleteBooking(booking.id)"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<footer>
+  <p>&copy; {{currentYear}}. All rights reverved.</p>
+</footer>
