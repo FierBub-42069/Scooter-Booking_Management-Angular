@@ -47,3 +47,11 @@ footer p {
   font-size: 16px;
   text-align: center !important;
 }
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #d0d0d0;
+}

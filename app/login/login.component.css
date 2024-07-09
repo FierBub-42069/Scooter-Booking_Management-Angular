@@ -46,3 +46,18 @@ footer p {
   font-size: 16px;
   text-align: center !important;
 }
+
+button {
+  background-color: #3d8cc1 !important;
+  border: none !important;
+  transition: background-color 0.3s ease !important;
+}
+
+button:hover {
+  background-color: #5ba8db !important;
+}
+
+button:disabled {
+  background-color: #d0d0d0 !important;
+  border: #b0b0b0 !important;
+}

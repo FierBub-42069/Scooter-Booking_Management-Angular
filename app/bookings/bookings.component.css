@@ -33,7 +33,7 @@ nav {
 
 .table {
   margin: 20px 0;
-  background-color: #f0f0f0;
+  background-color: #efefef;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -50,8 +50,12 @@ nav {
   text-align: left;
 }
 
+.table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
 .table tbody tr:hover {
-  background-color: #deeff0;
+  background-color: #b6e5e7;
 }
 
 button {

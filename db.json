@@ -6,7 +6,7 @@
       "mobileNumber": 9012,
       "scooterType": "Electric",
       "manufacturerName": "Ather Energy",
-      "registrationNumber": "MH01 XY420420",
+      "registrationNumber": "MH01 XY6789",
       "hireStartDate": "2024-07-08T12:00",
       "hireEndDate": "2024-07-08T18:00",
       "chargesPerHour": 150,
@@ -18,7 +18,7 @@
       "mobileNumber": 9130,
       "scooterType": "Electric",
       "manufacturerName": "Hero Motocorp",
-      "registrationNumber": "MH15 BS69420",
+      "registrationNumber": "MH15BS5050",
       "hireStartDate": "2024-07-08T09:09",
       "hireEndDate": "2024-07-08T11:09",
       "chargesPerHour": 100,
@@ -30,11 +30,23 @@
       "mobileNumber": 9012,
       "scooterType": "Petrol",
       "manufacturerName": "Honda",
-      "registrationNumber": "MH01 XY696969",
+      "registrationNumber": "MH01 XY6789",
       "hireStartDate": "2024-07-08T14:12",
       "hireEndDate": "2024-07-08T16:12",
       "chargesPerHour": 100,
       "id": 7
+    },
+    {
+      "firstName": "Romeo",
+      "lastName": "Juliet",
+      "mobileNumber": 1234567890,
+      "scooterType": "Electric",
+      "manufacturerName": "Ather Energy",
+      "registrationNumber": "MH12 ABCD345678",
+      "hireStartDate": "2024-07-09T11:07",
+      "hireEndDate": "2024-07-09T03:07",
+      "chargesPerHour": 180,
+      "id": 8
     }
   ]
 }

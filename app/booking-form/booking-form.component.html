@@ -180,7 +180,7 @@
             Charges per hour is required.
           </div>
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        <button type="submit" class="btn btn-primary btn-block" [disabled]="bookingForm.invalid">Submit</button>
       </form>
     </div>
   </form>

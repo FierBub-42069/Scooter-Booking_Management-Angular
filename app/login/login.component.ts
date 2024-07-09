@@ -7,7 +7,10 @@ import { AuthService } from '../auth/auth.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css', '../../../node_modules/ngx-toastr/toastr.css'],
+  styleUrls: [
+    './login.component.css',
+    '../../../node_modules/ngx-toastr/toastr.css',
+  ],
 })
 export class LoginComponent {
   loginForm: FormGroup;
@@ -17,7 +20,7 @@ export class LoginComponent {
     private fb: FormBuilder,
     private router: Router,
     private authService: AuthService,
-    private toastr: ToastrService,
+    private toastr: ToastrService
   ) {
     this.loginForm = this.fb.group({
       username: ['', Validators.required],
@@ -34,7 +37,10 @@ export class LoginComponent {
           this.router.navigate(['/bookings']);
         }, 100);
       } else {
-        alert('Invalid credentials');
+        this.toastr.error('Invalid credentials');
+        setTimeout(() => {
+          this.router.navigate(['/login']);
+        }, 100);
       }
     }
   }
